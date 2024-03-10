@@ -1,1 +1,1 @@
-Sunday practive of Spring Core
+Sunday practice of Spring Core
