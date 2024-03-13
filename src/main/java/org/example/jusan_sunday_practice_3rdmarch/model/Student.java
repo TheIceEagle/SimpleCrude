@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "students")
+@Table(name = "student")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,8 +22,8 @@ public class Student {
     private String email;
     private int age;
 
-    private int schoolGrade;
-    @ManyToOne(fetch = FetchType.LAZY)
+    private int grade;
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "student")
     private School school;
 

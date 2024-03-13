@@ -11,6 +11,4 @@ import java.util.List;
 public interface SchoolRepository extends JpaRepository<School,Long> {
     School findSchoolByName (String name);
 
-    @Query(value = "select studen_list from school where name = :name", nativeQuery = true)
-    List<Student> getAllStudents(String name);
 }
